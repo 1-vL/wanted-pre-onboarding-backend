@@ -3,13 +3,13 @@ server:
     encoding:
       charset: utf-8
       force: true
-  port: 8080
+  port: 8081 # 도커와 동시에 테스트 하기 위해 별도 포트로
 spring:
   datasource:
     url: jdbc:h2:mem:test;MODE=MySQL
     driver-class-name: org.h2.Driver
-    username: hanjunsoo
-    password: hanjunsooPassword
+    username: sa
+    password:
   h2:
     console:
       enabled: true
@@ -27,3 +27,6 @@ logging:
   level:
     '[com.wanted.preonboarding]': DEBUG
     '[org.hibernate.type]': TRACE
+
+jwt:
+  secret: ${jwt_secret}

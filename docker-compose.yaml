@@ -8,17 +8,17 @@ services:
       - "54132:3306"
     # 환경 변수 설정
     environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_DATABASE: wanted
-      MYSQL_USER: hanjunsoo
-      MYSQL_PASSWORD: hanjunsooPassword
-      MYSQL_ROOT_PASSWORD: hanjunsooRootPassword
       TZ: Asia/Seoul
     command:
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_unicode_ci
-    volumes:
-      - ./data/mysql/:/var/lib/mysql
   backend:
+    env_file:
+      - .env
     container_name: wanted
     build:
       context: .

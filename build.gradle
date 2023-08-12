@@ -31,6 +31,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
 	runtimeOnly 'com.h2database:h2'
@@ -40,7 +41,7 @@ dependencies {
 	testImplementation 'org.springframework.security:spring-security-test'
 
 	// mysql jdbc driver
-	implementation 'com.mysql:mysql-connector-j'
+	implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.1.0'
 	// JWT
 	implementation group: 'com.auth0', name: 'java-jwt', version: '4.3.0'
 	// openapi
