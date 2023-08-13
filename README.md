@@ -56,8 +56,6 @@ RESTful한 API를 위하여 필요한 경우 delete, put 메소드를 사용했�
 
 API 명세(request/response 포함):
 
-[API 문서 asciidoc html (Github Pages)](https://1-vl.github.io/website)
-
 [API 문서 asciidoc html (Oracle Cloud Infra Structure)](http://3ja2.duckdns.org:8080/docs/api-docs.html)
 
 [API 문서 Swagger (Oracle Cloud Infra Structure)](http://3ja2.duckdns.org:8080/swagger-ui/index.html)
