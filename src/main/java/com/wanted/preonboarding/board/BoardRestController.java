@@ -16,7 +16,7 @@ public class BoardRestController {
 
     private final BoardService boardService;
 
-    @PostMapping("/boards/post")
+    @PostMapping("/boards")
     public ResponseEntity<?> post(@RequestBody @Valid BoardRequest.PostDTO postDTO, Errors errors, @AuthenticationPrincipal CustomUserDetails userDetails) {
         boardService.post(postDTO, userDetails.getUser());
         return ResponseEntity.ok(ApiUtils.success(null));
