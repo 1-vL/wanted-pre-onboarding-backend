@@ -4,6 +4,7 @@
 애플리케이션의 실행 방법 (엔드포인트 호출 방법 포함):
 
 [배포된 엔드포인트(Oracle Cloud Infra Structure)](http://3ja2.duckdns.org:8080/): http://3ja2.duckdns.org:8080
+![배포된 환경](/src/main/resources/static/deploy.png)
 ```
   PostMan 등 API 호출 가능한 도구 사용하여 http://3ja2.duckdns.org:8080 위치의 엔드포인트 호출
 ```
