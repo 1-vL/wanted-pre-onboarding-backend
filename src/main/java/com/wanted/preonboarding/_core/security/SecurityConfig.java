@@ -27,7 +27,7 @@ import java.util.stream.Stream;
 @EnableWebSecurity
 public class SecurityConfig {
 
-    private static final String[] AUTH_METHODS = new String[] {"/carts/**", "/options/**", "/orders/**", "/users/**"};
+    private static final String[] AUTH_METHODS = new String[] {"/boards/**", "/users/**"};
     private static final String[] ADMIN_METHODS = new String[] {"/admin/**"};
 
     @Bean

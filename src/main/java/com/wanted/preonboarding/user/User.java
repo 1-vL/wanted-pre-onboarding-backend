@@ -1,7 +1,7 @@
 package com.wanted.preonboarding.user;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Min;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
@@ -19,7 +19,7 @@ public class User {
     @Column(length = 100, nullable = false, unique = true)
     private String email;
     @Column(length = 256, nullable = false)
-//    @Min(value = 8, message = "8자 이상의 비밀번호가 저장되어야 합니다.")
+    @JsonIgnore
     private String password;
 
     @Column(length = 30)
